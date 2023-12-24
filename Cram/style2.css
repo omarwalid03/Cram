@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+:root {
+  --blue-dark: #118c87;
+  --blue: #31c3bd;
+  --blue-light: #65e9e4;
+  --yellow-dark: #cc8b13;
+  --yellow: #f2b137;
+  --yellow-light: #ffc860;
+  --navy-dark: #10212a;
+  --navy: #1a2a33;
+  --navy-light: #1f3641;
+  --silver-dark: #6b8997;
+  --silver: #a8bfc9;
+  --silver-transparent: #a8bfc90d;
+  --silver-light: #dbe8ed;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color3);
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: var(--color2);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--silver-light);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--navy-light);
+  padding: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  position: sticky;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 3rem;
+}
+
+.logo-title {
+  font-size: 2rem;
+  color: var(--silver-light);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--silver-light);
+}
+
+.nav-button {
+  font-size: 1.25rem;
+}
+
+.nav-button:hover {
+  color: var(--yellow);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  border-radius: 0.25rem;
+  color: var(--color3);
+  background-color: var(--silver-light);
+  transition: all 0.2s;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+.button:hover {
+  background-color: var(--yellow);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("group-diverse-grads-throwing-caps-up-sky.jpg") center;
+  background-size: cover;
+  height: 80vh;
+  box-shadow: inset 10000px 10000px rgba(16, 33, 42, 0.75);
+  color: var(--silver-light);
+}                                                                                                                                                                                                      
+
+.hero-content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60rem;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-button {
+  width: 12rem;
+  padding: 1rem;
+}
+
+
+.user-info {
+    color: var(--color3);
+}
