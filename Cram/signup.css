@@ -17,8 +17,8 @@ body{
 
 .boox{
     position: absolute;
-    width: 380px;
-    height: 420px;
+    width: 400px;
+    height: 628px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -29,8 +29,8 @@ body{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 380px;
-    height: 420px;
+    width: 420px;
+    height: 680px;
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     z-index: 1;
@@ -42,8 +42,8 @@ body{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 380px;
-    height: 420px;
+    width: 420px;
+    height: 680px;
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     z-index: 1;
@@ -62,8 +62,8 @@ body{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 380px;
-    height: 420px;
+    width: 420px;
+    height: 680px;
     background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
     transform-origin: bottom right;
     z-index: 1;
@@ -76,8 +76,8 @@ body{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 380px;
-    height: 420px;
+    width: 420px;
+    height: 680px;
     background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
     transform-origin: bottom right;
     z-index: 1;
@@ -100,7 +100,7 @@ body{
     background: #222;
     padding: 50px 40px;
     border-radius: 8px;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: column;
 }
@@ -110,12 +110,37 @@ body{
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
+    margin-bottom: -10px;
+    margin-top: -30px;
 }
 
 .boox form .inputBox{
     position: relative;
     width: 300px;
-    margin-top: 35px;
+    margin-top: 25px;
+}
+
+.boox form .gen{
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.boox form .gen #gender{
+    width: 300px;
+    height: 35px;
+    font-weight: 300;
+    font-size: large;
+    background-color: #222;
+    color: #8f8f8f;
+}
+
+.boox form .inputBox .DOB{
+    z-index: 3;
+}
+
+.boox form .inputBox #dob{
+    z-index: 2;
 }
 
 .boox form .inputBox input{
@@ -175,23 +200,29 @@ body{
 
 }
 
-.boox form .links a{
-    margin: 10px 0;
-    font-size: 0.75em;
-    color: #8f8f8f;
+.boox form .links p{
+    margin: 5px 0;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.boox form .links p{
+    margin: 5px 0;
+    font-size: 1em;
+    color: #45f3ff;
     text-decoration: none;
 }
 
 .boox form .links a:hover,
 .boox form .links a:nth-child(2){
-    color: #fff;
+    color: #45f3ff;
 }
 
 .boox form input[type="submit"]{
     border: none;
     outline: none;
     padding: 9px 25px;
-    background: #fff;
+    background: #45f3ff;
     cursor: pointer;
     font-size: 0.9em;
     border-radius: 4px;
@@ -202,4 +233,12 @@ body{
 
 .box form input[type="submit"]:active{
     opacity: 0.8;
+}
+
+.boox form .links a:hover{
+    color: #fff;
+}
+
+.boox form input:hover{
+    color: #fff;
 }
