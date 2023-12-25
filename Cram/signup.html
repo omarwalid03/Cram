@@ -117,43 +117,43 @@
         </div>
         <div class="boox">
             <span class="borderLine"></span>
-            <form id="signupForm" action="verification.html" method="POST">
-                <h2>Signup</h2>
+            <form id="signupForm" action="Verification.html" method="POST">
+                <h2>Sign Up</h2>
                 <div class="inputBox">
-                    <input type="text" required="required">
+                    <input id="firstName" name="firstName" type="text" required="required">
                     <span>Firstname</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="text" required="required">
+                    <input id="lastName" name="lastName" type="text" required="required">
                     <span>Lastname</span>
                     <i></i>
                 </div>
-                <div class="inputBox">
-                    <input type="date" required="required">
-                    <span>Date of Birth</span>
+                <div id="date" class="inputBox">
+                    <input id="dob" name="dob" type="date" required="required">
+                    <span class="DOB">Date of Birth</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="text" required="required">
+                    <input id="email" name="email" type="text" required="required">
                     <span>Email</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="password" required="required">
+                    <input id="password" name="password" type="password" required="required">
                     <span>Password</span>
                     <i></i>
                 </div>
-                <div class="inputBox">
+                <div class="gen">
                     <select id="gender" name="gender" required>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
                 </div>
                 <div class="links">
-                    Already have an account?<a href="login.html">Login</a>
+                    <p>Already have an account ?</p><a href="login.html">Login</a>
                 </div>
-                <input type="submit" value="Login">
+                <input name="submit" id="submit" type="submit" onsubmit="signup()" value="Login">
             </form>
         </div>
     </div>
