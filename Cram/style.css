@@ -93,6 +93,25 @@ body {
   gap: 1rem;
 }
 
+
+.heading{
+  font-size: 4rem;
+  color:var(--blue-dark);
+  text-align: center;
+  padding: 0 1rem;
+  padding-top: 6rem;
+  letter-spacing: .2rem;
+  font-weight: 500;
+}
+
+.title{
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  color: #31c3bd;
+}
+
 .button {
   font-size: 1rem;
   font-weight: 500;
@@ -137,4 +156,59 @@ body {
 .hero-button {
   width: 12rem;
   padding: 1rem;
+}
+
+
+.About .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About .row .image img{
+  height: 70vh;
+  width: 50vw;
+}
+.About .row .content{
+  padding-left:5rem ;
+}
+
+.About .row  .content h3{
+  font-size: 3rem;
+  color:var(--yellow-dark);
+}
+
+.About .row  .content p{
+  font-size: 1.6rem;
+  color:#ffc860;
+  padding:1rem 0;
+}
+
+.About .row .content button{
+  height: 3.5rem;
+  width: 17rem;
+  background:-var(--violet);
+  color:#cc8b13;
+  border:none;
+  border-radius: 5rem;
+  box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 3);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: .2s ;
+}
+
+.About .row .content button:hover{
+  letter-spacing: .2rem ;
+  opacity: .8;
+}
+.About .row{
+  flex-flow: column-reverse;
+
+}
+.About .row .image img{
+  height: 60vh;
+  width: 90vw;
+}
+.About .row .content P{
+  padding: 0 2.5rem;
 }
