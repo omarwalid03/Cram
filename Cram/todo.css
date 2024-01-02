@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(218, 221, 225);
+    padding:0.625rem;
+    display: flex;
+    font-family: 'poppins',sans-serif;
+    align-items: flex-start; /* Updated to start at the top */
+    justify-content: center;
+   /* flex-direction: column; /* Updated to arrange children vertically */
+    padding-top: 100px;
+    flex-direction: row; /* Updated to arrange children horizontally */
+     flex-wrap: wrap; /* Added to allow wrapping to the next line */
+     padding-bottom: 150px;
+    
+     margin-top: 40px;
+ 
+}
+
+.todo {
+    width: calc(50% - 20px); /* 50% width with margin */
+    max-width: 540px;
+    background-color: #ffffff;
+   
+    padding:40px 30px 70px;
+    border-radius: 10px;
+    position:relative;
+   font-family: 'poppins',sans-serif;
+   margin-bottom: 20px; /* Added margin to separate from the timer */
+   margin-right: 20px; /* Added margin to separate from the timer */
+   margin-top: 100px;
+   
+}
+
+.todo h2  {
+    color: rgb(35, 44, 44);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'poppins',sans-serif;
+
+}
+
+.todo h2 img{
+    width: 30px;
+    margin-left: 10px;
+
+}
+
+.add {
+    display: flex;
+    align-items:center ;
+justify-content: space-between;
+     background: rgb(221, 224, 219);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    font-family: 'poppins',sans-serif;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-family: 'poppins',sans-serif;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color:#0d15ed ;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px ;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: 'poppins',sans-serif;
+
+}
+
+/*pseudo element before --> circle */
+ul li::before{
+    content:'' ;
+    position: absolute;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(full-moon_1762039.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+   background-image: url(checkmark_4855230.png);
+}
+/*css for x button in todolist span */
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+
+}
+ul li span:hover{
+    background: rgb(201, 201, 255);
+    border-radius: 50px;
+
+}
+
+
+
+
+/* @media only screen and (max-width: 768px) {
+    .todo {
+        width: 90%; 
+        margin: 10% auto 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .todo {
+        padding: 30px 20px 50px; 
+}
+}
+
+.timer-container {
+    width: calc(50% - 20px); /* 50% width with margin */
+    /* background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+   flex-direction: column; /* Stack buttons and timer vertically */
+/*}
+
+.timer-controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.timer-controls button {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    background-color: rgb(2, 2, 65);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.timer-display {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* Input buttons */
+/*.timer-inputs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.timer-inputs button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    background-color: rgb(2, 2, 65);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .todo {
+        width: 90%;
+        margin: 10% auto 20px;
+    }
+
+    .timer-container {
+        width: 90%;
+        margin: 10% auto 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .todo {
+        padding: 30px 20px 50px;
+    }
+
+    .timer-container {
+        padding: 20px;
+    }
+}  */
+
+@media only screen and (max-width: 768px) {
+    .todo,
+    .timer {
+        width: 90%;
+        margin: 10% auto 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .todo {
+        padding: 30px 20px 50px;
+    }
+
+    .timer {
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .pomodoro-container {
+        width: 100%;
+        margin-right: 0;
+    }
+}
