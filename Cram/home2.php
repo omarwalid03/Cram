@@ -30,7 +30,7 @@ if (isset($_SESSION['email'])) {
     //echo json_encode(['firstName' => $firstName, 'lastName' => $lastName]);
 } else {
     // Redirect to login page if not logged in
-    header("Location: login.html"); // Replace with the correct login page URL
+    // header("Location: login.html"); // Replace with the correct login page URL
     exit();
 }
 ?>
